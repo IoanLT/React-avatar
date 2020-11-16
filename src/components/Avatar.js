@@ -1,13 +1,12 @@
 import React from 'react';
 
-const Avatar = ({image, name, lastName}) => {
-    
+const Avatar = ({image, firstName, lastName}) => {
     return (
-        <div>
-            <img src={image} alt={name} />
-            <h1>{name} {lastName}</h1>
+        <div className='character-container'>
+            <img src={image} alt={firstName} />
+            <h2>{firstName} {lastName}</h2>
         </div>
-    )
+    )     
 };
 
 export default Avatar;
